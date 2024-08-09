@@ -33,16 +33,26 @@ public class ViewPrimeiraTela extends javax.swing.JFrame {
         jLabelSenha = new javax.swing.JLabel();
         jLabelTitulo = new javax.swing.JLabel();
         jPasswordField1 = new javax.swing.JPasswordField();
+        jButtonEsqueceuSenha = new javax.swing.JButton();
+        jButtonAcessar = new javax.swing.JButton();
         jPanel4CriarConta = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Nome:");
 
+        jTextFieldCampoNome.setToolTipText("Nome");
+
         jLabelSenha.setText("Senha:");
 
         jLabelTitulo.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         jLabelTitulo.setText("Informe seu login:");
+
+        jPasswordField1.setToolTipText("Senha");
+
+        jButtonEsqueceuSenha.setText("Esqueceu a senha");
+
+        jButtonAcessar.setText("Acessar");
 
         javax.swing.GroupLayout jPanel3LoginLayout = new javax.swing.GroupLayout(jPanel3Login);
         jPanel3Login.setLayout(jPanel3LoginLayout);
@@ -51,20 +61,26 @@ public class ViewPrimeiraTela extends javax.swing.JFrame {
             .addGroup(jPanel3LoginLayout.createSequentialGroup()
                 .addGroup(jPanel3LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3LoginLayout.createSequentialGroup()
+                        .addGap(95, 95, 95)
+                        .addComponent(jLabelTitulo))
+                    .addGroup(jPanel3LoginLayout.createSequentialGroup()
                         .addGap(68, 68, 68)
-                        .addGroup(jPanel3LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel3LoginLayout.createSequentialGroup()
-                                .addComponent(jLabelSenha)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jPasswordField1))
+                        .addGroup(jPanel3LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3LoginLayout.createSequentialGroup()
                                 .addComponent(jLabel1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextFieldCampoNome, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(jTextFieldCampoNome, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel3LoginLayout.createSequentialGroup()
+                                .addComponent(jLabelSenha)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel3LoginLayout.createSequentialGroup()
+                                .addGap(90, 90, 90)
+                                .addComponent(jButtonAcessar))))
                     .addGroup(jPanel3LoginLayout.createSequentialGroup()
-                        .addGap(95, 95, 95)
-                        .addComponent(jLabelTitulo)))
-                .addContainerGap(119, Short.MAX_VALUE))
+                        .addGap(135, 135, 135)
+                        .addComponent(jButtonEsqueceuSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(151, Short.MAX_VALUE))
         );
         jPanel3LoginLayout.setVerticalGroup(
             jPanel3LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -79,7 +95,11 @@ public class ViewPrimeiraTela extends javax.swing.JFrame {
                 .addGroup(jPanel3LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelSenha)
                     .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(121, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jButtonAcessar)
+                .addGap(18, 18, 18)
+                .addComponent(jButtonEsqueceuSenha)
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         jLabelTitulo.getAccessibleContext().setAccessibleName("Informe seu login:");
@@ -90,11 +110,11 @@ public class ViewPrimeiraTela extends javax.swing.JFrame {
         jPanel4CriarConta.setLayout(jPanel4CriarContaLayout);
         jPanel4CriarContaLayout.setHorizontalGroup(
             jPanel4CriarContaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 432, Short.MAX_VALUE)
         );
         jPanel4CriarContaLayout.setVerticalGroup(
             jPanel4CriarContaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 259, Short.MAX_VALUE)
+            .addGap(0, 253, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Criar Conta", jPanel4CriarConta);
@@ -103,12 +123,15 @@ public class ViewPrimeiraTela extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 438, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jTabbedPane1)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 294, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -151,6 +174,8 @@ public class ViewPrimeiraTela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify                     
+    private javax.swing.JButton jButtonAcessar;
+    private javax.swing.JButton jButtonEsqueceuSenha;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelSenha;
     private javax.swing.JLabel jLabelTitulo;

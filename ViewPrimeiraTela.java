@@ -29,127 +29,242 @@ public class ViewPrimeiraTela extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel3Login = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jTextFieldCampoNome = new javax.swing.JTextField();
-        jLabelSenha = new javax.swing.JLabel();
+        jPanel1Login = new javax.swing.JPanel();
         jLabelTitulo = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabelSaudacao = new javax.swing.JLabel();
+        jTextFieldDigiteLogin = new javax.swing.JTextField();
         jPasswordField1 = new javax.swing.JPasswordField();
-        jButtonEsqueceuSenha = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jButtonAcessar = new javax.swing.JButton();
-        jPanel4CriarConta = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel3Formulario = new javax.swing.JPanel();
+        jLabelContateNos = new javax.swing.JLabel();
+        jLabelNomeCompleto = new javax.swing.JLabel();
+        jLabelEmail = new javax.swing.JLabel();
+        jTextFieldDigiteNomeCompeto = new javax.swing.JTextField();
+        jTextFieldEmail = new javax.swing.JTextField();
+        jPanelTextArea = new javax.swing.JPanel();
+        jButtonEnviar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
+        setResizable(false);
 
-        jTabbedPane1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.setBackground(java.awt.Color.white);
 
-        jLabel1.setText("Nome:");
+        jTabbedPane1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
-        jTextFieldCampoNome.setToolTipText("Nome");
+        jPanel1Login.setBackground(new java.awt.Color(61, 158, 110));
 
-        jLabelSenha.setText("Senha:");
+        jLabelTitulo.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 22)); // NOI18N
+        jLabelTitulo.setForeground(new java.awt.Color(56, 13, 0));
+        jLabelTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelTitulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/esta-bem.png"))); // NOI18N
+        jLabelTitulo.setText("TODO APP");
 
-        jLabelTitulo.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jLabelTitulo.setText("Informe seu login:");
+        jLabelSaudacao.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabelSaudacao.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelSaudacao.setText("Bem vindo!");
 
-        jPasswordField1.setToolTipText("Senha");
-
-        jButtonEsqueceuSenha.setText("Esqueceu a senha");
-
-        jButtonAcessar.setText("Acessar");
-        jButtonAcessar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButtonAcessarMouseClicked(evt);
+        jTextFieldDigiteLogin.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder()), "Login"));
+        jTextFieldDigiteLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldDigiteLoginActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel3LoginLayout = new javax.swing.GroupLayout(jPanel3Login);
-        jPanel3Login.setLayout(jPanel3LoginLayout);
-        jPanel3LoginLayout.setHorizontalGroup(
-            jPanel3LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3LoginLayout.createSequentialGroup()
-                .addGroup(jPanel3LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3LoginLayout.createSequentialGroup()
-                        .addGap(95, 95, 95)
-                        .addComponent(jLabelTitulo))
-                    .addGroup(jPanel3LoginLayout.createSequentialGroup()
-                        .addGap(68, 68, 68)
-                        .addGroup(jPanel3LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3LoginLayout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextFieldCampoNome, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel3LoginLayout.createSequentialGroup()
-                                .addComponent(jLabelSenha)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel3LoginLayout.createSequentialGroup()
-                                .addGap(90, 90, 90)
-                                .addComponent(jButtonAcessar))))
-                    .addGroup(jPanel3LoginLayout.createSequentialGroup()
-                        .addGap(135, 135, 135)
-                        .addComponent(jButtonEsqueceuSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(151, Short.MAX_VALUE))
+        jPasswordField1.setBorder(javax.swing.BorderFactory.createTitledBorder("Senha"));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Esqueceu sua senha?");
+
+        jButtonAcessar.setBackground(new java.awt.Color(204, 204, 204));
+        jButtonAcessar.setText("Acessar");
+        jButtonAcessar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(74, 74, 74)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelSaudacao, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPasswordField1)
+                            .addComponent(jTextFieldDigiteLogin)
+                            .addComponent(jButtonAcessar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(2, 2, 2)))
+                .addGap(74, 74, 74))
         );
-        jPanel3LoginLayout.setVerticalGroup(
-            jPanel3LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3LoginLayout.createSequentialGroup()
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabelSaudacao, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTextFieldDigiteLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabelTitulo)
-                .addGap(32, 32, 32)
-                .addGroup(jPanel3LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextFieldCampoNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelSenha)
-                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButtonAcessar)
                 .addGap(18, 18, 18)
-                .addComponent(jButtonEsqueceuSenha)
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addComponent(jLabel1)
+                .addGap(30, 30, 30))
         );
 
-        jTabbedPane1.addTab("Login", jPanel3Login);
+        jLabel2.setBackground(java.awt.Color.white);
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel2.setForeground(java.awt.Color.white);
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Clique aqui para cadastrar");
 
-        javax.swing.GroupLayout jPanel4CriarContaLayout = new javax.swing.GroupLayout(jPanel4CriarConta);
-        jPanel4CriarConta.setLayout(jPanel4CriarContaLayout);
-        jPanel4CriarContaLayout.setHorizontalGroup(
-            jPanel4CriarContaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 432, Short.MAX_VALUE)
+        javax.swing.GroupLayout jPanel1LoginLayout = new javax.swing.GroupLayout(jPanel1Login);
+        jPanel1Login.setLayout(jPanel1LoginLayout);
+        jPanel1LoginLayout.setHorizontalGroup(
+            jPanel1LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1LoginLayout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addGroup(jPanel1LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 376, Short.MAX_VALUE))
+                .addGap(62, 62, 62))
+            .addGroup(jPanel1LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1LoginLayout.createSequentialGroup()
+                    .addGap(60, 60, 60)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGap(60, 60, 60)))
         );
-        jPanel4CriarContaLayout.setVerticalGroup(
-            jPanel4CriarContaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 253, Short.MAX_VALUE)
+        jPanel1LoginLayout.setVerticalGroup(
+            jPanel1LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1LoginLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(224, 224, 224)
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(24, 24, 24))
+            .addGroup(jPanel1LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1LoginLayout.createSequentialGroup()
+                    .addGap(44, 44, 44)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 218, Short.MAX_VALUE)
+                    .addGap(47, 47, 47)))
         );
 
-        jTabbedPane1.addTab("Criar Conta", jPanel4CriarConta);
+        jTabbedPane1.addTab("Login", jPanel1Login);
+
+        jPanel3Formulario.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabelContateNos.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
+        jLabelContateNos.setText("Contate-nos:");
+
+        jLabelNomeCompleto.setText("Nome completo:");
+
+        jLabelEmail.setText("E-mail:");
+
+        jPanelTextArea.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        javax.swing.GroupLayout jPanelTextAreaLayout = new javax.swing.GroupLayout(jPanelTextArea);
+        jPanelTextArea.setLayout(jPanelTextAreaLayout);
+        jPanelTextAreaLayout.setHorizontalGroup(
+            jPanelTextAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 469, Short.MAX_VALUE)
+        );
+        jPanelTextAreaLayout.setVerticalGroup(
+            jPanelTextAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 133, Short.MAX_VALUE)
+        );
+
+        jButtonEnviar.setText("Enviar");
+
+        javax.swing.GroupLayout jPanel3FormularioLayout = new javax.swing.GroupLayout(jPanel3Formulario);
+        jPanel3Formulario.setLayout(jPanel3FormularioLayout);
+        jPanel3FormularioLayout.setHorizontalGroup(
+            jPanel3FormularioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3FormularioLayout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addGroup(jPanel3FormularioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelTextArea, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel3FormularioLayout.createSequentialGroup()
+                        .addGroup(jPanel3FormularioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelContateNos)
+                            .addGroup(jPanel3FormularioLayout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanel3FormularioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelNomeCompleto)
+                                    .addComponent(jLabelEmail))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel3FormularioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jTextFieldDigiteNomeCompeto)
+                                    .addComponent(jTextFieldEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 295, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3FormularioLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButtonEnviar)))
+                .addContainerGap())
+        );
+        jPanel3FormularioLayout.setVerticalGroup(
+            jPanel3FormularioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3FormularioLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelContateNos)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel3FormularioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelNomeCompleto)
+                    .addComponent(jTextFieldDigiteNomeCompeto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3FormularioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelEmail)
+                    .addComponent(jTextFieldEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jPanelTextArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButtonEnviar)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("Formulário", jPanel3Formulario);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jTabbedPane1)
+                .addGap(10, 10, 10))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(10, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTabbedPane1)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jTabbedPane1)
-                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>                        
-    // MÉTODO USADO QUANDO O BOTÃO ACESSAR É CLICADO:
-    private void jButtonAcessarMouseClicked(java.awt.event.MouseEvent evt) {                                            
+
+    private void jTextFieldDigiteLoginActionPerformed(java.awt.event.ActionEvent evt) {                                                      
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(rootPane, "Seja Bem Vindo!");
-    }                                           
+    }                                                     
 
     /**
      * @param args the command line arguments
@@ -188,14 +303,23 @@ public class ViewPrimeiraTela extends javax.swing.JFrame {
 
     // Variables declaration - do not modify                     
     private javax.swing.JButton jButtonAcessar;
-    private javax.swing.JButton jButtonEsqueceuSenha;
+    private javax.swing.JButton jButtonEnviar;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabelSenha;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabelContateNos;
+    private javax.swing.JLabel jLabelEmail;
+    private javax.swing.JLabel jLabelNomeCompleto;
+    private javax.swing.JLabel jLabelSaudacao;
     private javax.swing.JLabel jLabelTitulo;
-    private javax.swing.JPanel jPanel3Login;
-    private javax.swing.JPanel jPanel4CriarConta;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel1Login;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel3Formulario;
+    private javax.swing.JPanel jPanelTextArea;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextField jTextFieldCampoNome;
+    private javax.swing.JTextField jTextFieldDigiteLogin;
+    private javax.swing.JTextField jTextFieldDigiteNomeCompeto;
+    private javax.swing.JTextField jTextFieldEmail;
     // End of variables declaration                   
 }

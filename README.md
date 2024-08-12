@@ -1,6 +1,6 @@
 ## Projeto desenvolvido no programa start da capgeminischool <br>
 Trilha de lógica de programação 3 com Java. <br>
-Objetivo: Prototipagem de telas de Login e Forulário<br>
+Objetivo: Prototipagem de telas de Login e Formulário<br>
 
 Tecnologias utilizadas no projeto: IDE Netbeans, linguagem de programação Java,Jframe.<br>
 # Tela de login:
